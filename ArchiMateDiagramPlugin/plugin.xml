@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.archiMatePlugin"
+		name="ArchiMate Diagram Plugin"
+		description="Sample plugin for generating ArchiMate Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.archiMatePlugin.ArchiMatePlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.archiMatePlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.archiMatePlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.archiMatePlugin.actionset1.ArchiMateActionControl"
+					actionType="generalAction"
+      		name="ArchiMate Diagram Plugin"
+		      description="Sample plugin for generating ArchiMate Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="ArchiMate Diagram"
+					toolbarPath="com.vp.plugin.sample.archiMatePlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.archiMatePlugin.ArchiMateAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
